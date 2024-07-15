@@ -15,7 +15,7 @@ public class StatistiquesAnnuelles extends javax.swing.JFrame {
      * Creates new form StatistiquesAnnuelles
      */
     public StatistiquesAnnuelles() {
-        initComponents();
+        initComponents(); 
     }
 
     /**
