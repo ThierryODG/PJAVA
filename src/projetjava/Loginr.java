@@ -42,77 +42,52 @@ public class Loginr extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         passr = new javax.swing.JPasswordField();
         LoginBtnr = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
         Rightr = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Leftr.setBackground(new java.awt.Color(255, 255, 255));
         Leftr.setMinimumSize(new java.awt.Dimension(400, 500));
+        Leftr.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("LOGIN");
+        Leftr.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(138, 51, -1, -1));
 
         jLabel2.setBackground(new java.awt.Color(102, 102, 102));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("Full name");
+        Leftr.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 139, -1, -1));
 
         fnamer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         fnamer.setForeground(new java.awt.Color(102, 102, 102));
+        Leftr.add(fnamer, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 172, 343, 40));
 
         jLabel3.setBackground(new java.awt.Color(102, 102, 102));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Password");
+        Leftr.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
+        Leftr.add(passr, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 263, 343, 40));
 
         LoginBtnr.setBackground(new java.awt.Color(0, 102, 102));
         LoginBtnr.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        LoginBtnr.setForeground(new java.awt.Color(255, 255, 255));
+        LoginBtnr.setForeground(new java.awt.Color(51, 0, 51));
         LoginBtnr.setText("Login");
         LoginBtnr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoginBtnrActionPerformed(evt);
             }
         });
+        Leftr.add(LoginBtnr, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 329, 93, 36));
 
-        javax.swing.GroupLayout LeftrLayout = new javax.swing.GroupLayout(Leftr);
-        Leftr.setLayout(LeftrLayout);
-        LeftrLayout.setHorizontalGroup(
-            LeftrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LeftrLayout.createSequentialGroup()
-                .addGroup(LeftrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(LeftrLayout.createSequentialGroup()
-                        .addGap(138, 138, 138)
-                        .addComponent(jLabel1))
-                    .addGroup(LeftrLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(LeftrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel2)
-                            .addComponent(fnamer)
-                            .addComponent(jLabel3)
-                            .addComponent(passr, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
-                            .addComponent(LoginBtnr, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(27, Short.MAX_VALUE))
-        );
-        LeftrLayout.setVerticalGroup(
-            LeftrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LeftrLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jLabel1)
-                .addGap(40, 40, 40)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(fnamer, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(passr, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(LoginBtnr, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(139, Short.MAX_VALUE))
-        );
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\THIERRY\\Desktop\\Projet MOBILE\\TEMPLATE\\01\\PJAVA\\src\\Icon\\Garantia de Procedência.png")); // NOI18N
+        Leftr.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 420, 520));
 
         Rightr.setBackground(new java.awt.Color(0, 102, 102));
         Rightr.setPreferredSize(new java.awt.Dimension(400, 500));
@@ -125,32 +100,40 @@ public class Loginr extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(204, 204, 204));
         jLabel7.setText("copyright © company name All rights reserved");
 
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\THIERRY\\Desktop\\Projet MOBILE\\TEMPLATE\\01\\PJAVA\\src\\Icon\\logo_1.png")); // NOI18N
+
         javax.swing.GroupLayout RightrLayout = new javax.swing.GroupLayout(Rightr);
         Rightr.setLayout(RightrLayout);
         RightrLayout.setHorizontalGroup(
             RightrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RightrLayout.createSequentialGroup()
-                .addGap(0, 81, Short.MAX_VALUE)
+                .addGap(0, 93, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(40, 40, 40))
             .addGroup(RightrLayout.createSequentialGroup()
-                .addGroup(RightrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(101, 101, 101)
+                .addGroup(RightrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel6)
                     .addGroup(RightrLayout.createSequentialGroup()
-                        .addGap(103, 103, 103)
-                        .addComponent(jLabel6))
-                    .addGroup(RightrLayout.createSequentialGroup()
-                        .addGap(145, 145, 145)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42)
                         .addComponent(jLabel5)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RightrLayout.setVerticalGroup(
             RightrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RightrLayout.createSequentialGroup()
-                .addGap(136, 136, 136)
-                .addComponent(jLabel5)
-                .addGap(26, 26, 26)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 210, Short.MAX_VALUE)
+                .addGroup(RightrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RightrLayout.createSequentialGroup()
+                        .addGap(136, 136, 136)
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RightrLayout.createSequentialGroup()
+                        .addContainerGap(84, Short.MAX_VALUE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33)
+                        .addComponent(jLabel6)
+                        .addGap(120, 120, 120)))
                 .addComponent(jLabel7)
                 .addGap(78, 78, 78))
         );
@@ -160,14 +143,14 @@ public class Loginr extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(Rightr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Rightr, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Leftr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(Leftr, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Rightr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(Leftr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Leftr, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(Rightr, javax.swing.GroupLayout.DEFAULT_SIZE, 513, Short.MAX_VALUE)
         );
 
         pack();
@@ -263,9 +246,11 @@ public class Loginr extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPasswordField passr;
     // End of variables declaration//GEN-END:variables
 }

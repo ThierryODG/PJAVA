@@ -40,16 +40,21 @@ Homer() {
         Statistiquemr = new javax.swing.JButton();
         ajoutu = new javax.swing.JButton();
         ajoutr = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 255));
-        jLabel1.setText("Welcome Back");
+        jLabel1.setText("GCOLIS");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, -1, -1));
 
         utilisateurr.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         utilisateurr.setForeground(new java.awt.Color(0, 204, 204));
-        utilisateurr.setText("John");
+        utilisateurr.setText("MENU");
+        getContentPane().add(utilisateurr, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, -1, -1));
 
         LogoutBtnr.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         LogoutBtnr.setForeground(new java.awt.Color(0, 153, 153));
@@ -59,6 +64,7 @@ Homer() {
                 LogoutBtnrActionPerformed(evt);
             }
         });
+        getContentPane().add(LogoutBtnr, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 610, 341, 50));
 
         Statistiquer.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         Statistiquer.setForeground(new java.awt.Color(0, 153, 153));
@@ -68,6 +74,7 @@ Homer() {
                 StatistiquerActionPerformed(evt);
             }
         });
+        getContentPane().add(Statistiquer, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, 341, 54));
 
         Statistiquemr.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         Statistiquemr.setForeground(new java.awt.Color(0, 153, 153));
@@ -77,69 +84,33 @@ Homer() {
                 StatistiquemrActionPerformed(evt);
             }
         });
+        getContentPane().add(Statistiquemr, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 534, -1, 60));
 
         ajoutu.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         ajoutu.setForeground(new java.awt.Color(0, 153, 153));
-        ajoutu.setText("Ajouter_utilisateur");
+        ajoutu.setText("Ajouter Utilisateur");
         ajoutu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ajoutuActionPerformed(evt);
             }
         });
+        getContentPane().add(ajoutu, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, 341, 50));
 
         ajoutr.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         ajoutr.setForeground(new java.awt.Color(0, 153, 153));
-        ajoutr.setText("Ajouter_responsable");
+        ajoutr.setText("Ajouter Responsable");
         ajoutr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ajoutrActionPerformed(evt);
             }
         });
+        getContentPane().add(ajoutr, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, 341, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(ajoutu)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(ajoutr))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(132, 132, 132)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(219, 219, 219)
-                        .addComponent(utilisateurr, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(185, 185, 185)
-                        .addComponent(LogoutBtnr))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(122, 122, 122)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Statistiquemr)
-                            .addComponent(Statistiquer, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(39, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(utilisateurr, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(LogoutBtnr)
-                .addGap(18, 18, 18)
-                .addComponent(Statistiquer, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(Statistiquemr, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ajoutu)
-                    .addComponent(ajoutr)))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\THIERRY\\Desktop\\Projet MOBILE\\TEMPLATE\\01\\PJAVA\\src\\Icon\\logo_1.png")); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 110, 140));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\THIERRY\\Desktop\\Projet MOBILE\\TEMPLATE\\01\\PJAVA\\src\\Icon\\Kia Seltos_1.jpeg")); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 830));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -233,6 +204,8 @@ Homer() {
     private javax.swing.JButton ajoutr;
     private javax.swing.JButton ajoutu;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel utilisateurr;
     // End of variables declaration//GEN-END:variables
 }

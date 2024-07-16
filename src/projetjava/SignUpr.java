@@ -45,48 +45,71 @@ public class SignUpr extends javax.swing.JFrame {
         passr = new javax.swing.JPasswordField();
         SignUpBtnr = new javax.swing.JButton();
         jButton1r = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jPanel2r = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanelr.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelr.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setBackground(new java.awt.Color(0, 102, 102));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel4.setText("SIGN UP");
+        jPanelr.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, -1, -1));
 
         jLabel5.setBackground(new java.awt.Color(102, 102, 102));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setText("Full name");
+        jPanelr.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
 
         fnamer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         fnamer.setForeground(new java.awt.Color(102, 102, 102));
+        jPanelr.add(fnamer, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 332, 40));
 
         jLabel6.setBackground(new java.awt.Color(102, 102, 102));
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setText("Prenom");
+        jPanelr.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, -1));
 
         roleur.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         roleur.setForeground(new java.awt.Color(102, 102, 102));
+        roleur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                roleurActionPerformed(evt);
+            }
+        });
+        jPanelr.add(roleur, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 332, 40));
 
         jLabel7.setBackground(new java.awt.Color(102, 102, 102));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel7.setText("Password");
+        jPanelr.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
 
         passr.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         passr.setForeground(new java.awt.Color(102, 102, 102));
+        passr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passrActionPerformed(evt);
+            }
+        });
+        jPanelr.add(passr, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 332, 40));
 
         SignUpBtnr.setBackground(new java.awt.Color(0, 102, 102));
-        SignUpBtnr.setForeground(new java.awt.Color(255, 255, 255));
+        SignUpBtnr.setForeground(new java.awt.Color(51, 0, 0));
         SignUpBtnr.setText("Sign Up");
         SignUpBtnr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignUpBtnrActionPerformed(evt);
             }
         });
+        jPanelr.add(SignUpBtnr, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 380, 91, 37));
 
         jButton1r.setText("Retour");
         jButton1r.addActionListener(new java.awt.event.ActionListener() {
@@ -94,58 +117,16 @@ public class SignUpr extends javax.swing.JFrame {
                 jButton1rActionPerformed(evt);
             }
         });
+        jPanelr.add(jButton1r, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 480, 110, 40));
 
-        javax.swing.GroupLayout jPanelrLayout = new javax.swing.GroupLayout(jPanelr);
-        jPanelr.setLayout(jPanelrLayout);
-        jPanelrLayout.setHorizontalGroup(
-            jPanelrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelrLayout.createSequentialGroup()
-                .addGroup(jPanelrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelrLayout.createSequentialGroup()
-                        .addGroup(jPanelrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanelrLayout.createSequentialGroup()
-                                .addGap(145, 145, 145)
-                                .addComponent(jLabel4))
-                            .addGroup(jPanelrLayout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addGroup(jPanelrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(SignUpBtnr, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanelrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jLabel5)
-                                        .addComponent(fnamer)
-                                        .addComponent(jLabel6)
-                                        .addComponent(roleur, javax.swing.GroupLayout.DEFAULT_SIZE, 332, Short.MAX_VALUE)
-                                        .addComponent(jLabel7)
-                                        .addComponent(passr)))))
-                        .addGap(0, 12, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelrLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1r)))
-                .addContainerGap())
-        );
-        jPanelrLayout.setVerticalGroup(
-            jPanelrLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelrLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel4)
-                .addGap(29, 29, 29)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(fnamer, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(roleur, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(passr, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(SignUpBtnr, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addComponent(jButton1r)
-                .addGap(37, 37, 37))
-        );
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\THIERRY\\Desktop\\Projet MOBILE\\TEMPLATE\\01\\PJAVA\\src\\Icon\\Facteur.png")); // NOI18N
+        jPanelr.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 560, 550));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\THIERRY\\Desktop\\Projet MOBILE\\TEMPLATE\\01\\PJAVA\\src\\Icon\\Garantia de Procedência.png")); // NOI18N
+        jPanelr.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 670, 580));
+
+        jLabel11.setText("jLabel11");
+        jPanelr.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         jPanel2r.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -157,6 +138,8 @@ public class SignUpr extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(204, 204, 204));
         jLabel3.setText("copyright © company name All rights reserved");
 
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\THIERRY\\Desktop\\Projet MOBILE\\TEMPLATE\\01\\PJAVA\\src\\Icon\\logo_1.png")); // NOI18N
+
         javax.swing.GroupLayout jPanel2rLayout = new javax.swing.GroupLayout(jPanel2r);
         jPanel2r.setLayout(jPanel2rLayout);
         jPanel2rLayout.setHorizontalGroup(
@@ -164,24 +147,28 @@ public class SignUpr extends javax.swing.JFrame {
             .addGroup(jPanel2rLayout.createSequentialGroup()
                 .addGroup(jPanel2rLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2rLayout.createSequentialGroup()
-                        .addGap(137, 137, 137)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel2rLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(jLabel3))
                     .addGroup(jPanel2rLayout.createSequentialGroup()
-                        .addGap(104, 104, 104)
+                        .addGap(137, 137, 137)
+                        .addGroup(jPanel2rLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel1)))
+                    .addGroup(jPanel2rLayout.createSequentialGroup()
+                        .addGap(103, 103, 103)
                         .addComponent(jLabel2)))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
         jPanel2rLayout.setVerticalGroup(
             jPanel2rLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2rLayout.createSequentialGroup()
-                .addGap(129, 129, 129)
+                .addGap(109, 109, 109)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addGap(30, 30, 30)
+                .addGap(69, 69, 69)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 227, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(64, 64, 64))
         );
@@ -193,16 +180,12 @@ public class SignUpr extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel2r, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanelr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(238, 238, 238))
+                .addComponent(jPanelr, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanelr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2r, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 93, Short.MAX_VALUE))
+            .addComponent(jPanelr, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2r, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -257,6 +240,14 @@ public class SignUpr extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton1rActionPerformed
 
+    private void passrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passrActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passrActionPerformed
+
+    private void roleurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roleurActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roleurActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -297,12 +288,16 @@ public class SignUpr extends javax.swing.JFrame {
     private javax.swing.JTextField fnamer;
     private javax.swing.JButton jButton1r;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2r;
     private javax.swing.JPanel jPanelr;
     private javax.swing.JPasswordField passr;
